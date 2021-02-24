@@ -5,26 +5,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>registration</title>
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 2px solid rgb(76, 67, 87);
+        }
+    </style>
 </head>
 
 <body>
-    <h1> Register form</h1>
-
-    <body>
-
+    <div class="container">
+        <h2>Formulario</h2>
         <span>user</span>
-        <input type="text" name="user" id="user reg" placeholder="User...">
+        <input type="text" name="usuario" id="user" placeholder="Inserte usuario">
         <span>password</span>
-        <input type="text" name="passw" id="passw reg" placeholder="insert password...">
-        <span>role</span>
-        <select name="role" id="role">
-            <option value="client">client</option>
-            <option value="admin"> admin </option>
+        <input type="text" name="contrasenia" id="passw" placeholder="Inserte contraseña">
+
+
+        <select id="rol" name="rol">
+            <option id="rol">admin</option>
+            <option id="rol">cliente</option>
         </select>
+        <button onclick="logIn()">log in</button>
+        <br><br>
+    </div>
 
+    <div>
+        <div>
+            <table style="width:50%">
+                <tr>
+                    <th>usuario</th>
+                    <th>contrasenia</th>
+                    <th>cliente</th>
+                </tr>
 
-        <button onClick="registerNewUser()">Register</button>
-    </body>
+            </table>
+        </div>
+    </div>
+    <script src="/pregunta3/script.js"></script>
+</body>
 
 </html>
